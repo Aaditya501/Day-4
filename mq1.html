@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .d{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .box{
+            width: 150px;
+            height: 150px;
+        }
+
+        @media (max-width: 1000px)  
+        {
+            .d{
+                grid-template-columns: auto auto;
+            }
+        }
+
+        @media (max-width: 700px)  
+        {
+            .d{
+                grid-template-columns: auto;
+            }
+        }
+
+       
+    </style>
+</head>
+
+<body class="b">
+
+    <div class="d">
+
+        <div class="box" style="background-color: purple;"></div>
+        <div class="box" style="background-color: blue ;"></div>
+        <div class="box" style="background-color: yellow;"></div>
+        <div class="box" style="background-color: red;"></div>
+    
+    </div>
+
+</body>
+</html>
